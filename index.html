@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Servis računara Gigabyte</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<button onclick="darkmod()" class="crnimod"><img src="lampa.png" class="dmslika"></button>
+<script>
+	function darkmod() {
+  				let element = document.body;
+  				element.classList.toggle("dark-mode");
+				}
+</script>
+<img src="fb.png" id="anim">
+			<script>
+ 				anim.onclick = function() {
+ 				let start = Date.now();
+ 				let timer = setInterval(function() {
+ 				let timePassed = Date.now() - start;
+				anim.style.top = timePassed / 5 + 'px';
+				if (timePassed > 700) clearInterval(timer);
+				 }, 20);
+					 }
+			</script>
+<body>
+	<div class="nav">
+
+		<ul>
+			<li><a href="#">Početna</li>
+			<li><a href="#">O nama</li>
+			<li><a href="#">Kontakt</li>
+		</ul>
+	</div>
+			<p id="naslov" onclick="vozic()">NASI PROIZVODI</p><br>
+			<script>
+				function vozic() {
+ 				let start = Date.now();
+ 				let timer = setInterval(function vozic() {
+ 				let timePassed = Date.now() - start;
+ 				naslov.style.left = timePassed / 5 + 'px';
+ 				if (timePassed > 2000) clearInterval(timer);
+ 				}, 20);
+ 				}
+			</script>
+		<div class="kontejner">
+
+		<div class="novo">
+			<div class="jedan">
+				<img src="laptop.jpg">
+				<p>HP laptop</p><br>
+				<button class="dugmeinfo" onclick="laptop()">INFO</button>
+				<script>
+					function laptop() {
+ 				alert("Intel i5 5500U\nIntel HD 5000\n8GB RAM\N45.000 RSD");
+				}
+				</script>
+			</div>
+			<div class="jedan">
+				<img src="pc.jpg">
+				<p>PC računar</p><br>
+				<button class="dugmeinfo" onclick="pc()">INFO</button>
+				<script>
+					function pc() {
+ 				alert("Ryzen 5 1600 \nASUS STRIX AMD RX 570 4 GB\nRAM 16GB 2666Mhz\n50.000 RSD");
+				}
+				</script>
+			</div>
+			<div class="jedan">
+				<img src="tastatura.jpg">
+				<p>Mehanicka tastatura</p><br>
+				<button class="dugmeinfo" onclick="tastatura()">INFO</button>
+				<script>
+					function tastatura() {
+ 				alert("Redragon K530 Draconic RGB Wireless Mechanical Keyboard\n61 Keys Tenkeyless Designed 5.0 Bluetooth\nGaming Keyboard and 16.8 Million RGB\n5.600 RSD");
+				}
+				</script>
+			</div>
+		</div>
+		<div class="novo">	
+			<div class="jedan">
+				<img src="gaming.jpg">
+				<p>AMD Procesor</p><br>
+				<button class="dugmeinfo" onclick="procesor()">INFO</button>
+				<script>
+					function procesor() {
+ 				alert("AMD Ryzen 5 1600AF\nClock: 3.3 GHz\nBoost: 3.6GHz\nCena: 14.000 RSD");
+				}
+				</script>
+			</div>
+			<div class="jedan">
+				<img src="procesor.jpg">
+				<p>Hard disk</p><br>
+				<button class="dugmeinfo" onclick="hard()">INFO</button>
+				<script>
+					function hard() {
+ 				alert("Samsung hard disk\n500GB\nCena: 1.200 RSD");
+				}
+				</script>
+			</div>
+			<div class="jedan">
+				<img src="monitor.jpg">
+				<p>Monitori</p><br>
+				<button class="dugmeinfo" onclick="monitor()">INFO</button>
+				<script>
+					function monitor() {
+ 				alert("LG W1234\n27 Inca\nFull HD\nCena: 20.000 RSD");
+				}
+				</script>
+			</div>
+		</div>
+	</div>
+	<div class="futer">
+		<p onclick="lajv()" class="pomoc">Pomoć</p>
+		<script>
+			function lajv() {
+  				 let pitanje = prompt('Unesite vase pitanje', '');
+  				 if (pitanje == "") alert('Niste uneli pitanje');
+  				 else{
+  			 	alert('Vase pitanje glasi:\n ' + pitanje + '\nUskoro cete dobiti odgovor od nase podrske')
+  				}
+				}
+		</script>
+	</div>
+</body>
+</html>
